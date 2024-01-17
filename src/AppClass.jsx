@@ -26,5 +26,21 @@ export default class AppClass extends Component{
     return data;
   }
 
-  // code here
+  render(){
+    const images = this.imageData()
+
+    return(
+      <div id='gir'>
+
+      {images.map((element) => (
+       <img src={element.img} id={element.id}/>
+       
+      ))};
+      </div>
+   )
+  }
+
+ 
+ // code here
+
 }
